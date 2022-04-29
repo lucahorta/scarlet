@@ -19,7 +19,7 @@ bool call_back ( const c_client client, std::vector<uint8_t> buf ) {
 			client.send ( outbound ); // sent packet to client
 
 			outbound.reset ( wlatt ); // send another packet with different packet type
-			outbound.write<float> ( 69.f );
+			outbound.write<float> ( 1337.f );
 
 			client.send ( outbound );
 
